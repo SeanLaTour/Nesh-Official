@@ -415,9 +415,8 @@ export const tabify = (array) => {
       if (!temp) {
         temp = !temp;
         return fret;
-      } else {
-        return
-      }
+      } 
+      return
     }
   });
 };
@@ -433,6 +432,7 @@ export const tabifyForEdit = (array) => {
       temp = !temp;
       return fret;
     }
+    return
   });
 };
 
