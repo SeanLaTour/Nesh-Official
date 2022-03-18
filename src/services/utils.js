@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const transform = (note, position = 0) => {
   switch (note) {
     case "E2":
