@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./App.css";
 import Tab from "./Tab";
 import { Switch, Route } from "react-router-dom";
-import { useState } from "react/cjs/react.development";
 import Edit from "./Edit";
 import Publish from "./Publish";
 import MicPage from "./MicPage";
