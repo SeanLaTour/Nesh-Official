@@ -2,19 +2,14 @@ export const transform = (note, position = 0) => {
   switch (note) {
     case "E2":
       return { string: "e", fret: "0" };
-      break;
     case "F2":
       return { string: "e", fret: "1" };
-      break;
     case "F#2":
       return { string: "e", fret: "2" };
-      break;
     case "G2":
       return { string: "e", fret: "3" };
-      break;
     case "G#2":
       return { string: "e", fret: "4" };
-      break;
     case "A2":
       if (position === 0) {
         return { string: "a", fret: "0" };
@@ -384,22 +379,16 @@ export const transform = (note, position = 0) => {
       break;
     case "A#5":
       return { string: "e2", fret: "(18)" };
-      break;
     case "B5":
       return { string: "e2", fret: "(19)" };
-      break;
     case "C5":
       return { string: "e2", fret: "(20)" };
-      break;
     case "C#5":
       return { string: "e2", fret: "(21)" };
-      break;
     case "D5":
       return { string: "e2", fret: "(22)" };
-      break;
     default:
       return " ";
-      break;
   }
 };
 
