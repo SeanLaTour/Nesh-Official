@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import "./App.css";
 import Tab from "./Tab";
 import { Switch, Route } from "react-router-dom";

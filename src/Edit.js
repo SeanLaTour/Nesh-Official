@@ -108,7 +108,7 @@ function Edit({ noteArray, position }) {
     const position = currentNote.position;
     if (tabObj[string])
       tabObj[string].forEach((button, index) => {
-        if (button.props.id == position) {
+        if (button.props.id.toString() === position) {
           tabObj[string][index] = (
             <button
               onClick={(e) => openModal(e)}

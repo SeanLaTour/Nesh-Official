@@ -1,5 +1,3 @@
-
-
 export const transform = (note, position = 0) => {
   switch (note) {
     case "E2":
@@ -405,7 +403,7 @@ export const tabify = (array) => {
     } else if (fret === ")") {
       doubleDigit = !doubleDigit;
       return ``;
-    } 
+    }
 
     if (doubleDigit) {
       return `${fret}`;
@@ -417,8 +415,8 @@ export const tabify = (array) => {
       if (!temp) {
         temp = !temp;
         return fret;
-      } 
-      return ""
+      }
+      return "";
     }
   });
 };
@@ -434,7 +432,7 @@ export const tabifyForEdit = (array) => {
       temp = !temp;
       return fret;
     }
-    return ""
+    return "";
   });
 };
 
