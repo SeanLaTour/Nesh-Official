@@ -293,7 +293,7 @@ export const transform = (note, position = 0) => {
         return { string: "d", fret: "(21)" };
       }
       break;
-    case "C5":
+    6
       if (position <= 1) {
         return { string: "e2", fret: "8" };
       } else if (position === 2) {
@@ -381,11 +381,11 @@ export const transform = (note, position = 0) => {
       return { string: "e2", fret: "(18)" };
     case "B5":
       return { string: "e2", fret: "(19)" };
-    case "C5":
+    case "C6":
       return { string: "e2", fret: "(20)" };
-    case "C#5":
+    case "C#6":
       return { string: "e2", fret: "(21)" };
-    case "D5":
+    case "D6":
       return { string: "e2", fret: "(22)" };
     default:
       return " ";
@@ -403,7 +403,8 @@ export const tabify = (array) => {
     } else if (fret === ")") {
       doubleDigit = !doubleDigit;
       return ``;
-    }
+    } 
+
     if (doubleDigit) {
       return `${fret}`;
     } else {
@@ -414,6 +415,8 @@ export const tabify = (array) => {
       if (!temp) {
         temp = !temp;
         return fret;
+      } else {
+        return
       }
     }
   });
