@@ -30,8 +30,6 @@ function Edit({ noteArray, position }) {
   const [fretInput, setFretInput] = useState("");
   const [toggle, setToggle] = useState(false);
 
-  console.log("tabObj from Edit", tabObj);
-
   const customStyles = {
     overlay: {
       position: "fixed",
@@ -74,15 +72,6 @@ function Edit({ noteArray, position }) {
         if (note.props.children.length > 1) {
           doubleDigit = `(${note.props.children})`;
           tabObjForStorage[string[0]] += doubleDigit;
-          Object.entries(tabObjForStorage).forEach((otherString, index) => {
-            console.log(
-              "handlePushblish",
-              tabObjForStorage[otherString[0]][index - 1]
-            );
-            // TODO... Add a dash "-" after the first closing parenthesis ")" in a line
-            // also add a dash to the index of any string whose next three characters are not
-            // parenthesis "(" ")"...
-          });
         } else {
           tabObjForStorage[string[0]] += note.props.children;
         }
@@ -119,7 +108,7 @@ function Edit({ noteArray, position }) {
     const position = currentNote.position;
     if (tabObj[string])
       tabObj[string].forEach((button, index) => {
-        if (button.props.id === position) {
+        if (button.props.id == position) {
           tabObj[string][index] = (
             <button
               onClick={(e) => openModal(e)}
@@ -161,7 +150,6 @@ function Edit({ noteArray, position }) {
               break;
             default:
               setEString(tabifyForEdit(tabObj.e));
-              break;
           }
         }
       });
