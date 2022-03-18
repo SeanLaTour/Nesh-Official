@@ -1,3 +1,4 @@
+import React from 'react'
 import Mic from "./Mic";
 
 function MicPage({ setNoteArray }) {
