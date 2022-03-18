@@ -293,7 +293,7 @@ export const transform = (note, position = 0) => {
         return { string: "d", fret: "(21)" };
       }
       break;
-    6
+    case "C5":
       if (position <= 1) {
         return { string: "e2", fret: "8" };
       } else if (position === 2) {
