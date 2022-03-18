@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Page,
   Text,
@@ -9,7 +9,6 @@ import {
   Link,
 } from "@react-pdf/renderer";
 import Logo from "./images/logo-search-grid-desktop.png";
-import { useState } from "react/cjs/react.development";
 import { refineTabObjForPDF } from "./services/utils";
 
 // Create styles
