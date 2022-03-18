@@ -117,7 +117,7 @@ a {
 
 .tab-bar::-webkit-scrollbar {
   display: none;
-  font-family: "Courier"
+  font-family: "Courier";
 }
 
 .logo {

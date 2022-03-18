@@ -17,7 +17,6 @@ function Header() {
         right: "0",
         width: "100%",
         display: "flex",
-        justifyContent: "center",
         justifyContent: "space-between",
       }}
     >

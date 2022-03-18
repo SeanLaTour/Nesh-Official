@@ -16,7 +16,7 @@ function MicContainer({ setNoteArray, noteArray, record, recordOff, check }) {
           padding: "2rem",
         }}
       >
-        <img className="logo" src={logo} />
+        <img className="logo" alt="logo" src={logo} />
         {audioWave ? (
           <div
             className="logo-content"

@@ -5,7 +5,6 @@ import {
   View,
   Document,
   StyleSheet,
-  PDFViewer,
   PDFDownloadLink,
   Link,
 } from "@react-pdf/renderer";
@@ -179,7 +178,7 @@ function CreatePDF() {
           width: "100%",
         }}
       >
-        <img src={Logo} />
+        <img src={Logo} alt="logo" />
         <label>File name</label>
         <input onChange={(e) => handleInputFileName(e)}></input>
         <label>Band name</label>

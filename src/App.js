@@ -7,7 +7,6 @@ import Publish from "./Publish";
 import MicPage from "./MicPage";
 import Header from "./components/Header";
 import CreatePDFPage from "./CreatePDF";
-import { PDFViewer } from "@react-pdf/renderer";
 
 function App() {
   const [noteArray, setNoteArray] = useState([]);
